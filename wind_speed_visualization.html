@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Review</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Landing Page -->
+      <a class="navbar-brand" href="index.html">Latitude</a>
+    
+      <!-- Right side collapsible navbar -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Collapsible navbar button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- List items navbar links to -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Plots
+              </a>
+              <div class="dropdown-menu">
+                <!-- Dropdown link to max_temperature_visualization.html -->
+                <a class="dropdown-item" href="max_temperature_visualization.html">Max Temperature</a>
+                <!-- Dropdown link to humidity_visualization.html -->
+                <a class="dropdown-item" href="humidity_visualization.html">Humidity</a>
+                <!-- Dropdown link to cloudiness_visualization.html -->
+                <a class="dropdown-item" href="cloudiness_visualization.html">Cloudiness</a>
+                <!-- Dropdown link to wind_speed_visualization.html -->
+                <a class="dropdown-item" href="wind_speed_visualization.html">Wind Speed</a>
+              </div>
+            </li>
+
+            <!-- Link to Comparisons page -->
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparisons</a>
+            </li>
+            <!-- Link to Data page -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Data</a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </nav>
+
+    
+    <div class="row">
+      <!-- Left side column to hold summary of project -->
+      <div class="col-md-8 summary-section">
+        <div class="box purple"><h2>Wind Speed</h2></div>
+        <a target="_blank" href="assets/images/Fig4.png">
+          <img src="assets/images/Fig4.png">
+        </a>
+        <p>Wind speed does not seem to be have a direct correlation to latitude. However, the data points from 1/05/17 in particular seem to suggest that the northern hemisphere have faster winds. This may have a relationship with the higher cloudiness in the same latitudes since high cloudiness and wind speeds are suggest storms.</p>
+      </div>
+
+      <!-- Right side column to hold clickable visualiazations -->
+      <div class="col-md-4 visualization-section">
+        <div class="box purple"><h3>Visualizations</h3></div>
+        <div class="column">
+          <div class="card">
+            <img class="card-img" src="assets/images/Fig1.png" alt="Max Temp Img" style="width:100%">
+              <a href="max_temperature_visualization.html" class="stretched-link"></a>
+          </div>
+          <div class="card">
+            <img class="card-img" src="assets/images/Fig3.png" alt="Cloudiness Img" style="width:100%">
+              <a href="cloudiness_visualization.html" class="stretched-link"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img class="card-img" src="assets/images/Fig2.png" alt="Humidity Img" style="width:100%">
+              <a href="humidity_visualization.html" class="stretched-link"></a>
+          </div>
+          <div class="card">
+            <img class="card-img" src="assets/images/Fig4.png" alt="Wind Speed Img" style="width:100%">
+              <a href="wind_speed_visualization.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </main>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Review</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Landing Page -->
+      <a class="navbar-brand" href="index.html">Latitude</a>
+    
+      <!-- Right side collapsible navbar -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Collapsible navbar button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- List items navbar links to -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Plots
+              </a>
+              <div class="dropdown-menu">
+                <!-- Dropdown link to max_temperature_visualization.html -->
+                <a class="dropdown-item" href="max_temperature_visualization.html">Max Temperature</a>
+                <!-- Dropdown link to humidity_visualization.html -->
+                <a class="dropdown-item" href="humidity_visualization.html">Humidity</a>
+                <!-- Dropdown link to cloudiness_visualization.html -->
+                <a class="dropdown-item" href="cloudiness_visualization.html">Cloudiness</a>
+                <!-- Dropdown link to wind_speed_visualization.html -->
+                <a class="dropdown-item" href="wind_speed_visualization.html">Wind Speed</a>
+              </div>
+            </li>
+
+            <!-- Link to Comparisons page -->
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparisons</a>
+            </li>
+            <!-- Link to Data page -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Data</a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="row">
+      <div class="col-12 comparison-section">
+        <div class="box purple"><h2>Comparison: Latitude vs. X</h2></div>
+      </div>
+      <!-- Create left column -->
+      <div class="col-sm-6">
+        <!-- Create chart title -->
+        <div class="box purple"><h3 class="text-center">vs. Max Temperature</h3></div>
+
+        <!-- <h3 class="text-center">vs. Max Temperature</h3> -->
+
+        <!-- Create anchor point and image link for chart -->
+        <a target="_blank" href="assets/images/Fig1.png">
+          <img src="assets/images/Fig1.png" alt="Max Temperature Map" class="img-fluid">
+        </a>
+        <hr>
+        <!-- Create chart title -->
+        <div class="box purple"><h3 class="text-center">vs. Cloudiness</h3></div>
+
+        <!-- <h3 class="text-center">vs. Cloudiness</h3> -->
+
+        <!-- Create anchor point and image link for chart -->
+        <a target="_blank" href="assets/images/Fig3.png">
+          <img src="assets/images/Fig3.png" alt="Cloudiness Map" class="img-fluid">
+        </a>
+      </div>
+      <!-- Create right column -->
+      <div class="col-sm-6">
+        <!-- Create chart title -->
+        <div class="box purple"><h3 class="text-center">vs. Humidity</h3></div>
+
+        <!-- <h3 class="text-center">vs. Humidity</h3> -->
+
+        <!-- Create anchor point and image link for chart -->
+        <a target="_blank" href="assets/images/Fig2.png">
+          <img src="assets/images/Fig2.png" alt="Humidity Map" class="img-fluid">
+        </a>
+        <hr>
+        <!-- Create chart title -->
+        <div class="box purple"><h3 class="text-center">vs. Wind Speed</h3></div>
+
+        <!-- <h3 class="text-center">vs. Wind Speed</h3> -->
+
+        <!-- Create anchor point and image link for chart -->
+        <a target="_blank" href="assets/images/Fig4.png">
+          <img src="assets/images/Fig4.png" alt="Wind Speed Map" class="img-fluid">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
